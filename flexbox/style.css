@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+header{
+    border: 3px solid green;
+    display: flex;
+    padding: 5px;
+    
+    span{
+        flex: 1 0 100px;
+        color: green;
+    }
+
+
+    nav{
+        border: 3px solid yellow;
+        flex: 1 1 600px;
+        padding: 5px 5px 15px 5px;
+        color: yellow;
+        
+    }
+}
+
+main{
+    border: 3px solid green;
+    padding: 5px 5px;
+    display: flex;
+    gap: 5px;
+    flex-flow: row wrap;
+    color: green;
+    
+    
+
+    span{
+        color: green;
+    }
+
+    
+}
+
+.container-section-1{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 400px;
+    gap: 5px;
+}
+
+.section-1{
+    display: flex;
+    border: 3px solid yellow;
+    padding: 5px;
+    margin-top: 10px;
+    flex-flow: column nowrap;
+    flex: 1 1 200px;
+    padding-bottom: 70px;
+
+    span{
+        color: yellow;
+        padding: 5px;
+    }
+
+    article{
+        border: 3px solid blue;
+        flex: 1 1 auto;
+        padding: 5px 5px 40px 7px;
+
+        span{
+            color: blue;
+        }
+    }
+}
+
+aside{
+    border: 3px solid yellow;
+    flex: 1 1 200px;
+    flex-flow: column nowrap;
+    padding: 5px;
+    display: flex;
+    
+
+    span{
+        color: yellow;
+        padding: 5px;
+    }
+
+    section{
+        
+        color: blue;
+        border: 3px solid blue;
+        padding: 5px 5px 60px 7px;
+    }
+}
+
+.section-2{
+    border: 3px solid yellow;
+    padding: 5px;
+    padding-bottom: 40px;
+    /* flex: 1 1 100%; */
+
+    span{
+        color: yellow;
+    }
+}
+
+footer{
+    border: 3px solid green;
+    padding: 15px 5px;
+
+    span{
+        color: green;
+    }                                                                                            
+}
+
+
+@media (max-width: 620px){
+    aside{
+        flex-flow: column nowrap;
+
+    }
+
+    .asideDiv{
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 5px;
+    }
+
+    .asideDiv > section{
+        flex: 1 1 auto;
+    }
+}
